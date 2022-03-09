@@ -28,10 +28,10 @@ export function Search() {
           crossOrigin="anonymous"
         />
       </Head>
-      <DocSearch
-        apiKey={SEARCH_API_KEY}
-        indexName={'nextjs'}
-        appId={SEARCH_APP_ID}
+<DocSearch
+apiKey={SEARCH_API_KEY}
+indexName={'nextjs'}
+appId={SEARCH_APP_ID}
       />
     </>
   )
