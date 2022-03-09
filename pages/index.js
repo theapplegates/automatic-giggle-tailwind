@@ -16,7 +16,7 @@ export const SEARCH_APP_ID = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID
 
 export function Search() {
   if (!SEARCH_APP_ID || !SEARCH_API_KEY) {
-    return null;
+    return null
   }
 
   return (
@@ -34,8 +34,9 @@ export function Search() {
         appId={SEARCH_APP_ID}
       />
     </>
-  );
+  )
 }
+
 
 
 
@@ -131,4 +132,5 @@ export default function Home({ posts }) {
     </>
   )
 }
+
 
