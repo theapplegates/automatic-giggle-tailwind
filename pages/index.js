@@ -8,11 +8,11 @@ import '@docsearch/css'
 
 import NewsletterForm from '@/components/NewsletterForm'
 
-import { DocSearch } from '@docsearch/react';
-import Head from 'next/head';
+import { DocSearch } from '@docsearch/react'
+import Head from 'next/head'
 
-export const SEARCH_API_KEY = process.env.NEXT_PUBLIC_ALGOLIA_KEY;
-export const SEARCH_APP_ID = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID;
+export const SEARCH_API_KEY = process.env.NEXT_PUBLIC_ALGOLIA_KEY
+export const SEARCH_APP_ID = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID
 
 export function Search() {
   if (!SEARCH_APP_ID || !SEARCH_API_KEY) {
@@ -30,12 +30,13 @@ export function Search() {
       </Head>
       <DocSearch
         apiKey={SEARCH_API_KEY}
-        indexName={'docs'}
+        indexName={'nextjs'}
         appId={SEARCH_APP_ID}
       />
     </>
   );
 }
+
 
 
 const MAX_DISPLAY = 5
